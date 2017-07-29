@@ -1,0 +1,5 @@
+- Human eye up to 15 dioptres
+	- inf to 6.5 cm
+		- 6.5 cm occurs when zonular tension reduced (by ciliary muscles)
+	- this can occur in 350 ms (might take this into account)
+	- 

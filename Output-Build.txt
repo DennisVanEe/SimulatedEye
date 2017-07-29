@@ -1,0 +1,8 @@
+﻿-------- Edit and Continue build started --------
+
+eyeball.cpp
+--------------------- Done ----------------------
+
+Edit and Continue : error  : CRT initialization changed (section .CRT$XCU). Edit and Continue cannot perform runtime initialization for this edit. (d:\development\artificial_eye\artificial_eye\x64\debug\eyeball.new.obj.enc)
+Edit and Continue : An error occurred while applying code changes.
+
