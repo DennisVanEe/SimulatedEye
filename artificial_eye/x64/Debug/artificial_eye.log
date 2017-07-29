@@ -1,4 +1,22 @@
-﻿  main.cpp
-d:\development\artificial_eye\artificial_eye\main.cpp(109): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  artificial_eye.vcxproj -> D:\Development\artificial_eye\x64\Debug\artificial_eye.exe
-  artificial_eye.vcxproj -> D:\Development\artificial_eye\x64\Debug\artificial_eye.pdb (Partial PDB)
+﻿Build started 7/29/2017 3:49:09 PM.
+     1>Project "D:\Development\artificial_eye\artificial_eye\artificial_eye.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development\artificial_eye\x64\Debug\artificial_eye.exe" /INCREMENTAL /NOLOGO assimp.lib opengl32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\Development\artificial_eye\x64\Debug\artificial_eye.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\artificial_eye\x64\Debug\artificial_eye.lib" /MACHINE:X64 x64\Debug\Camera.obj
+         x64\Debug\mesh.obj
+         x64\Debug\eyeball.obj
+         x64\Debug\glad.obj
+         x64\Debug\imageplane.obj
+         x64\Debug\main.obj
+         x64\Debug\model.obj
+         x64\Debug\raysphere.obj
+         x64\Debug\renderer.obj
+         x64\Debug\shader.obj
+         x64\Debug\stb_image.obj
+         x64\Debug\textloading.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         artificial_eye.vcxproj -> D:\Development\artificial_eye\x64\Debug\artificial_eye.exe
+     1>Done Building Project "D:\Development\artificial_eye\artificial_eye\artificial_eye.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.39

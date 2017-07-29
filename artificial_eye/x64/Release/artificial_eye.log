@@ -1,25 +1,23 @@
-﻿  eyeball.cpp
-  imageplane.cpp
-imageplane.cpp(55): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-imageplane.cpp(100): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-  main.cpp
-main.cpp(114): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  raysphere.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.10.25017\include\utility(217): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  raysphere.cpp(62): note: see reference to function template instantiation 'std::pair<float,glm::vec3>::pair<int,glm::tvec3<float,0>,void,0>(std::pair<int,glm::tvec3<float,0>> &&) noexcept' being compiled
-  raysphere.cpp(62): note: see reference to function template instantiation 'std::pair<float,glm::vec3>::pair<int,glm::tvec3<float,0>,void,0>(std::pair<int,glm::tvec3<float,0>> &&) noexcept' being compiled
-  renderer.cpp
-renderer.cpp(29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-renderer.cpp(71): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-renderer.cpp(72): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-renderer.cpp(76): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-renderer.cpp(77): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-renderer.cpp(79): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-renderer.cpp(80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-renderer.cpp(87): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating code
-  50 of 1131 functions ( 4.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    8 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  artificial_eye.vcxproj -> D:\Development\artificial_eye\x64\Release\artificial_eye.exe
+﻿Build started 7/29/2017 3:50:19 PM.
+     1>Project "D:\Development\artificial_eye\artificial_eye\artificial_eye.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development\artificial_eye\x64\Release\artificial_eye.exe" /NOLOGO assimp.lib opengl32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\Development\artificial_eye\x64\Release\artificial_eye.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\artificial_eye\x64\Release\artificial_eye.lib" /MACHINE:X64 x64\Release\Camera.obj
+         x64\Release\mesh.obj
+         x64\Release\eyeball.obj
+         x64\Release\glad.obj
+         x64\Release\imageplane.obj
+         x64\Release\main.obj
+         x64\Release\model.obj
+         x64\Release\raysphere.obj
+         x64\Release\renderer.obj
+         x64\Release\shader.obj
+         x64\Release\stb_image.obj
+         x64\Release\textloading.obj
+         Generating code
+         Finished generating code
+         artificial_eye.vcxproj -> D:\Development\artificial_eye\x64\Release\artificial_eye.exe
+     1>Done Building Project "D:\Development\artificial_eye\artificial_eye\artificial_eye.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.40
