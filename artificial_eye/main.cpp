@@ -151,6 +151,7 @@ int main()
 		glfwPollEvents();
 	}
 	glfwTerminate();
+	delete g_eyeball;
 
 	std::cin.get();
 	std::cin.get();
