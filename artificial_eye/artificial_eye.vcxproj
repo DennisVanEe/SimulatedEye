@@ -108,11 +108,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(SolutionDir)dependencies\glfw\include;$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\assimp\include;$(SolutionDir)dependencies\glm\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)dependencies\glfw\lib;$(SolutionDir)dependencies\assimp\lib\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)dependencies\glfw\lib;$(SolutionDir)dependencies\assimp\lib\x64\release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(SolutionDir)dependencies\glfw\include;$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\assimp\include;$(SolutionDir)dependencies\glm\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)dependencies\glfw\lib;$(SolutionDir)dependencies\assimp\lib\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)dependencies\glfw\lib;$(SolutionDir)dependencies\assimp\lib\x64\release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>assimp.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc120-mt.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -158,7 +158,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>assimp.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>assimp-vc120-mt.lib;opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,1 +1,0 @@
-copy over assimp.dll to the output directory
