@@ -13,6 +13,8 @@ uniform sampler2D textSpec1;
 uniform sampler2D textSpec2;
 uniform sampler2D textSpec3;
 
+uniform vec3 defaultColor;
+
 out vec4 fragColor;
 
 void main()
@@ -28,7 +30,7 @@ void main()
 		fragColor = texture(textDiffuse3, textCoord);
 
 	if (noText)
-		fragColor = vec4(0.f, 1.f, 0.f, 1.f);
+		fragColor = vec4(defaultColor, 1.f);
 	else
 	{
 		if (fragColor.x > 0.99f && fragColor.y > 0.99f && fragColor.z > 0.99f)

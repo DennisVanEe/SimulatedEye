@@ -19,39 +19,40 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="mesh.cpp" />
-    <ClCompile Include="eyeball.cpp" />
-    <ClCompile Include="glad.c" />
-    <ClCompile Include="imageplane.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="model.cpp" />
-    <ClCompile Include="raysphere.cpp" />
-    <ClCompile Include="renderer.cpp" />
-    <ClCompile Include="shader.cpp" />
-    <ClCompile Include="stb_image.cpp" />
-    <ClCompile Include="textloading.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="camera.hpp" />
-    <ClInclude Include="drawable.hpp" />
-    <ClInclude Include="mesh.hpp" />
-    <ClInclude Include="eyeball.hpp" />
-    <ClInclude Include="imageplane.hpp" />
-    <ClInclude Include="model.hpp" />
-    <ClInclude Include="ray.hpp" />
-    <ClInclude Include="raysphere.hpp" />
-    <ClInclude Include="renderer.hpp" />
-    <ClInclude Include="shader.hpp" />
-    <ClInclude Include="stb_image.hpp" />
-    <ClInclude Include="textloading.hpp" />
-    <ClInclude Include="world.hpp" />
+    <ClCompile Include="..\dependencies\glad\src\glad.c" />
+    <ClCompile Include="src\camera.cpp" />
+    <ClCompile Include="src\eyeball.cpp" />
+    <ClCompile Include="src\imageplane.cpp" />
+    <ClCompile Include="src\_main.cpp" />
+    <ClCompile Include="src\mesh.cpp" />
+    <ClCompile Include="src\model.cpp" />
+    <ClCompile Include="src\raysphere.cpp" />
+    <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\shader.cpp" />
+    <ClCompile Include="src\stb_image.cpp" />
+    <ClCompile Include="src\textloading.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\3D_frag.glsl" />
     <None Include="shader\3D_vert.glsl" />
     <None Include="shader\eyeview_frag.glsl" />
     <None Include="shader\eyeview_vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\camera.hpp" />
+    <ClInclude Include="src\drawable.hpp" />
+    <ClInclude Include="src\eyeball.hpp" />
+    <ClInclude Include="src\imageplane.hpp" />
+    <ClInclude Include="src\mesh.hpp" />
+    <ClInclude Include="src\model.hpp" />
+    <ClInclude Include="src\ray.hpp" />
+    <ClInclude Include="src\raysphere.hpp" />
+    <ClInclude Include="src\renderer.hpp" />
+    <ClInclude Include="src\shader.hpp" />
+    <ClInclude Include="src\stb_image.hpp" />
+    <ClInclude Include="src\textloading.hpp" />
+    <ClInclude Include="src\type.hpp" />
+    <ClInclude Include="src\world.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -107,12 +108,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)dependencies\glfw\include;$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\assimp\include;$(SolutionDir)dependencies\glm\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)dependencies\glfw\include;$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\assimp\include;$(SolutionDir)dependencies\glm\include;$(SolutionDir)dependencies\tinyxml2\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)dependencies\glfw\lib;$(SolutionDir)dependencies\assimp\lib\x64\release;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)dependencies\glad\src;$(VC_SourcePath);$(SolutionDir)dependencies\tinyxml2\src</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)dependencies\glfw\include;$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\assimp\include;$(SolutionDir)dependencies\glm\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)dependencies\glfw\include;$(SolutionDir)dependencies\glad\include;$(SolutionDir)dependencies\assimp\include;$(SolutionDir)dependencies\glm\include;$(SolutionDir)dependencies\tinyxml2\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)dependencies\glfw\lib;$(SolutionDir)dependencies\assimp\lib\x64\release;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)dependencies\glad\src;$(VC_SourcePath);$(SolutionDir)dependencies\tinyxml2\src</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -1,12 +1,17 @@
-﻿Build started 7/30/2017 3:16:26 PM.
+﻿Build started 8/3/2017 12:38:55 PM.
      1>Project "D:\Development\artificial_eye\artificial_eye\artificial_eye.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development\artificial_eye\x64\Release\artificial_eye.exe" /NOLOGO "assimp-vc120-mt.lib" opengl32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\Development\artificial_eye\x64\Release\artificial_eye.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\artificial_eye\x64\Release\artificial_eye.lib" /MACHINE:X64 x64\Release\Camera.obj
-         x64\Release\mesh.obj
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Ob2 /Oi /Ot /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:fast /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\_main.cpp
+         _main.cpp
+     1>src\_main.cpp(146): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>src\_main.cpp(174): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Development\artificial_eye\x64\Release\artificial_eye.exe" /NOLOGO "assimp-vc120-mt.lib" opengl32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\Development\artificial_eye\x64\Release\artificial_eye.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Development\artificial_eye\x64\Release\artificial_eye.lib" /MACHINE:X64 x64\Release\glad.obj
+         x64\Release\camera.obj
          x64\Release\eyeball.obj
-         x64\Release\glad.obj
          x64\Release\imageplane.obj
-         x64\Release\main.obj
+         x64\Release\_main.obj
+         x64\Release\mesh.obj
          x64\Release\model.obj
          x64\Release\raysphere.obj
          x64\Release\renderer.obj
@@ -20,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.92
+Time Elapsed 00:00:03.12
